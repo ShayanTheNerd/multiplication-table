@@ -99,6 +99,10 @@ td:hover,
     font-weight: bold;
 }
 
+.bg-light-blue {
+    background-color: #02b3e435;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         overflow: hidden;
