@@ -1,185 +1,46 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en-US" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Multiplication Table</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Shayan Zamani" />
+		<meta name="theme-color" content="#2E3D49" />
+		<meta name="color-scheme" content="dark light" />
+		<link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="scripts.js"></script>
+	</head>
 
-<head>
-    <title>Multiplication Table</title>
-    <meta charset="UTF-8">
-    <meta name="language" content="EN">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="multiplication table website, multiplication table practice for children, responsive multiplication table">
-    <meta name="description"
-        content="Multiplication Table is a SPW created with HTML, CSS, Tailwind CSS, and JavaScript to help children practice multiplication table and numbers">
-    <meta name="author" content="Shayan Zamani">
-    <meta name="theme-color" content="#2E3D49" />
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-</head>
+	<body>
+		<!-- non-desktop device warning modal -->
+		<dialog id="warningModal" class="warning-modal">
+			<strong>Please preview website on a desktop.</strong>
+			<button type="button" id="closeModalBtn" class="warning-modal__close-btn">OK</button>
+		</dialog>
 
-<body>
-    <!-- Small-screen warning box -->
-    <div class="warning-box" id="smallScreenAlertBox">
-        <p class="text-center m-auto font-semibold">
-            Please preview website on a desktop
-        </p>
-        <svg xmlns="http://www.w3.org/2000/svg" class="warning-box-icon"
-            viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                clip-rule="evenodd" />
-        </svg>
-    </div>
+		<header class="header">
+			<h1 class="header__title">Multiplication Table</h1>
 
-    <main>
-        <table>
-            <thead>
-                <!-- 1st row -->
-                <tr id="headerNumbers">
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>10</th>
-                </tr>
-            </thead>
+			<address class="contact-links">
+				<span>by</span>
+				<a href="https://shayan-zamani.me" target="_blank" rel="noreferrer" class="contact-links__author">
+					Shayan Zamani
+				</a>
+			</address>
+		</header>
 
-            <tbody>
-                <!-- 2nd row -->
-                <tr>
-                    <th>2</th>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>8</td>
-                    <td>10</td>
-                    <td>12</td>
-                    <td>14</td>
-                    <td>16</td>
-                    <td>18</td>
-                    <td>20</td>
-                </tr>
+		<!-- table -->
+		<div class="wrapper">
+			<main class="main">
+				<table class="table" id="table">
+					<thead class="table__head">
+						<tr id="tableTopHeaderRow"></tr>
+					</thead>
 
-                <!-- 3rd row -->
-                <tr>
-                    <th>3</th>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>12</td>
-                    <td>15</td>
-                    <td>18</td>
-                    <td>21</td>
-                    <td>24</td>
-                    <td>27</td>
-                    <td>30</td>
-                </tr>
-
-                <!-- 4th row -->
-                <tr>
-                    <th>4</th>
-                    <td>8</td>
-                    <td>12</td>
-                    <td>16</td>
-                    <td>20</td>
-                    <td>24</td>
-                    <td>28</td>
-                    <td>32</td>
-                    <td>36</td>
-                    <td>40</td>
-                </tr>
-
-                <!-- 5th row -->
-                <tr>
-                    <th>5</th>
-                    <td>10</td>
-                    <td>15</td>
-                    <td>20</td>
-                    <td>25</td>
-                    <td>30</td>
-                    <td>35</td>
-                    <td>40</td>
-                    <td>45</td>
-                    <td>50</td>
-                </tr>
-
-                <!-- 6th row -->
-                <tr>
-                    <th>6</th>
-                    <td>12</td>
-                    <td>18</td>
-                    <td>24</td>
-                    <td>30</td>
-                    <td>36</td>
-                    <td>42</td>
-                    <td>48</td>
-                    <td>54</td>
-                    <td>60</td>
-                </tr>
-
-                <!-- 7th row -->
-                <tr>
-                    <th>7</th>
-                    <td>14</td>
-                    <td>21</td>
-                    <td>28</td>
-                    <td>35</td>
-                    <td>42</td>
-                    <td>49</td>
-                    <td>56</td>
-                    <td>63</td>
-                    <td>70</td>
-                </tr>
-
-                <!-- 8th row -->
-                <tr>
-                    <th>8</th>
-                    <td>16</td>
-                    <td>24</td>
-                    <td>32</td>
-                    <td>40</td>
-                    <td>48</td>
-                    <td>56</td>
-                    <td>64</td>
-                    <td>72</td>
-                    <td>80</td>
-                </tr>
-
-                <!-- 9th row -->
-                <tr>
-                    <th>9</th>
-                    <td>18</td>
-                    <td>27</td>
-                    <td>36</td>
-                    <td>45</td>
-                    <td>54</td>
-                    <td>63</td>
-                    <td>72</td>
-                    <td>81</td>
-                    <td>90</td>
-                </tr>
-
-                <!-- 10th row -->
-                <tr>
-                    <th>10</th>
-                    <td>20</td>
-                    <td>30</td>
-                    <td>40</td>
-                    <td>50</td>
-                    <td>60</td>
-                    <td>70</td>
-                    <td>80</td>
-                    <td>90</td>
-                    <td>100</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-
-    <script defer src="scripts.js"></script>
-</body>
-
+					<tbody class="table__body" id="tableBody"></tbody>
+				</table>
+			</main>
+		</div>
+	</body>
 </html>
