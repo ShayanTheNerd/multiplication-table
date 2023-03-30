@@ -85,7 +85,7 @@ More projects like this: https://github.com/ShayanTheNerd?tab=repositories <br /
 
 ## License
 
-The code in this project is licensed under <a href="https://github.com/ShayanTheNerd/multiplication-table/blob/main/LICENSE.md">MIT license</a>. You're free to use it; but a link to this page and mentioning the author's name is mandatory.
+The code in this project is licensed under <a href="https://github.com/ShayanTheNerd/multiplication-table/blob/main/LICENSE.MD">MIT license</a>. You're free to use it; but a link to this page and mentioning the author's name is mandatory.
 
 <br /><br />
-<a href="https://github.com/ShayanTheNerd/multiplication-table#multiplication-table">Back to top ⬆️</a>
+<a href="https://github.com/ShayanTheNerd/multiplication-table/tree/main#multiplication-table">Back to top ⬆️</a>
