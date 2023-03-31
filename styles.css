@@ -27,7 +27,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 100dvh;
 	padding: 1rem;
 	font: normal normal 400 2rem 'Inter', sans-serif; /* font: font-style font-variant font-weight font-size/line-height font-family; */
 	color: var(--white);
