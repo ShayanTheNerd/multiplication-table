@@ -55,7 +55,7 @@ const tableTopHeaderRow = document.querySelector('#tableTopHeaderRow');
 
 		warningModal.showModal();
 
-		closeModalBtn.addEventListener('click', () => warningModal.close());
+		closeModalBtn.addEventListener('click', () => warningModal.close(), { once: true });
 	}
 
 	const table = document.querySelector('#table');
