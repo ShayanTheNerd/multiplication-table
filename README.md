@@ -65,7 +65,7 @@ Your contribution is always welcome, please follow these steps:
 <ol>
   <li>Fork the project (https://github.com/ShayanTheNerd/multiplication-table/fork)</li>
   <li>Create your feature branch (<code>git checkout -b feature/branch-name</code>)</li>
-  <li>Make sure you follow instructions in the <a href="https://github.com/ShayanTheNerd/multiplication-table#style-guide">syle guide</a></li>
+  <li>Make sure you follow instructions in the <a href="https://github.com/ShayanTheNerd/multiplication-table#style-guide">style guide</a></li>
   <li>Commit your changes (<code>git commit -am 'Added foo bar baz feature'</code>)</li>
   <li>Push to the branch (<code>git push origin feature/branch-name</code>)</li>
   <li>Create a new Pull Request</li>
