@@ -3,7 +3,7 @@
 This awesome tool helps you visualize an interactive multiplication table on your device!
 
 <figure>
-  <img src="https://github.com/ShayanTheNerd/multiplication-table/blob/main/og-img.png" />
+  <img src="https://github.com/ShayanTheNerd/multiplication-table/blob/main/og-img.webp" />
 </figure>
 
 ## Technologies used in this project
