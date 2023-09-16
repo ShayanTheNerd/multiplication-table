@@ -38,7 +38,7 @@ Alternatively, you can copy the source of the project directly to your local env
 ```sh
 npm install -g degit
 
-degit https://github.com/ShayanTheNerd/quadratic-equation-solver new-project-folder
+degit https://github.com/ShayanTheNerd/multiplication-table new-project-folder
 ```
 
 #### That's it! In order to format the code with Prettier, install the extension on your code editor and enable the `"editor.formatOnSave": true` (or a similar option) in the settings.
