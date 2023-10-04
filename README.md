@@ -102,4 +102,3 @@ degit https://github.com/ShayanTheNerd/multiplication-table new-project-folder
 <br />
 
 <a href="https://github.com/ShayanTheNerd/multiplication-table#multiplication-table">back to top ⬆️</a>
-
