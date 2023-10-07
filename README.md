@@ -27,7 +27,7 @@
       <a href="https://github.com/ShayanTheNerd/multiplication-table/issues">Issues</a>
    </li>
    <li>
-      <a href="https://github.com/ShayanTheNerd/multiplication-table/issues">Pull requests</a>
+      <a href="https://github.com/ShayanTheNerd/multiplication-table/pulls">Pull requests</a>
    </li>
    <li>
       <a href="https://github.com/ShayanTheNerd?tab=repositories">My other projects</a>
