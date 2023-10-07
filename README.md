@@ -66,6 +66,8 @@ pnpm i -g degit
 degit https://github.com/ShayanTheNerd/multiplication-table new-project-folder
 ```
 
+<p>Now, you can preview the project on a local server of your choice. My personal recommendation is the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server Extension</a>.</p>
+
 <h2>Deployment and production</h2>
 <p>Before deploying the project or creating a new pull request, format all files and make sure there are no errors:</p>
 
