@@ -1,7 +1,7 @@
 <h1>Multiplication Table</h1>
 
 <p>
-   This project helps you visualize an interactive multiplication table on your device.
+   Visualize an interactive multiplication table on your device.
 </p>
 <figure>
    <img src="https://github.com/ShayanTheNerd/multiplication-table/blob/main/og-img.webp" alt="Multiplication Table preview" />
@@ -12,7 +12,7 @@
 <p>Users should be able to:</p>
 <ul>
    <li>Recieve a firendly warning if they're previweing website on a non-desktop device (mobile, tablet, etc.).</li>
-   <li>Hover over a number (table cell) and have corresponding table cells highlighted to see the numbers that make up the multiplication.</li>
+   <li>Hover over a number (table cell) or click on it if on a non-desktop device and have corresponding table cells highlighted to see the numbers that make up the multiplication.</li>
 </ul>
 
 <h3>Links</h3>
@@ -44,9 +44,9 @@
 
 <h3>I learned:</h3>
 <ul>
-   <li>How to detect the type of user agent's device (mobile/desktop).</li>
-   <li>How to implement a multiplication table with dynamic table cells.</li>
-   <li>How to use apply side effects on dynamic, sibling UI elements based on hover.</li>
+   <li>How to apply side effects on dynamic, sibling UI elements.</li>
+   <li>How to detect the type of user agent's device (desktop/non-desktop).</li>
+   <li>How to implement a multiplication table with dynamically generated cells.</li>
 </ul>
 
 <h2>Development setup</h2>
@@ -66,10 +66,10 @@ pnpm i -g degit
 degit https://github.com/ShayanTheNerd/multiplication-table new-project-folder
 ```
 
-<p>Now, you can preview the project on a local server of your choice. My personal recommendation is the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server Extension</a>.</p>
+<p>Now, you can preview it on a local server of your choice. My personal recommendation is the <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server Extension</a>.</p>
 
 <h2>Deployment and production</h2>
-<p>Before deploying the project or creating a new pull request, format all files and make sure there are no errors:</p>
+<p>Before deploying the project or creating a new pull request, format all files and make sure there are no errors.</p>
 
 <h2>Style Guide</h2>
 <p>If you want to develop this project, please stick to these rules:</p>
