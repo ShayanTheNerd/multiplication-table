@@ -1,0 +1,18 @@
+module.exports = {
+	semi: true,
+	useTabs: true,
+	printWidth: 120,
+	singleQuote: true,
+	trailingComma: 'all',
+	insertPragma: false,
+	arrowParens: 'avoid',
+	requirePragma: false,
+	bracketSpacing: true,
+	proseWrap: 'preserve',
+	bracketSameLine: true,
+	pluginSearchDirs: false,
+	quoteProps: 'as-needed',
+	astroAllowShorthand: true,
+	htmlWhitespaceSensitivity: 'css',
+	embeddedLanguageFormatting: 'auto',
+};
