@@ -31,9 +31,11 @@
 }
 body {
 	height: 100vh;
+	max-width: 102rem; /* “100rem” + the “inline-padding” */
+	padding: 1rem;
+	margin-inline: auto;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
 	color: var(--white);
 	background-color: var(--navy-blue);
 	font: normal normal 400 2rem var(--font-family);
