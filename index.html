@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en" dir="ltr">
 	<!-- prettier-ignore -->
 	<head>
       <meta charset="UTF-8" />
       <title>Multiplication Table</title>
 
       <meta name="author" content="Shayan Zamani" />
-      <meta name="keywords" content="math online tool, multiplication table, online multiplication table, multiplication table website" />
       <meta name="theme-color" content="#2E3D49" />
-      <meta name="color-scheme" content="light dark" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="keywords" content="math online tool, multiplication table, online multiplication table, multiplication table website" />
       
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="shayan-zamani.me" />
@@ -26,40 +25,42 @@
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://shayanthenerd.github.io/multiplication-table/og-img.webp" />
       <meta property="twitter:image:alt" content="multiplication table" />
-      <meta name="twitter:description" content="An elegant multiplication table with hover effect. Move the cursor on table cells to highlight current rows and columns.">
 
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.svg" />
-      <link rel="stylesheet" href="styles.css" />
-      <script defer src="main.js"></script>
+      <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+      <link rel="stylesheet" href="./assets/styles.css" />
+      <script type="module" src="./assets/js/app.js"></script>
    </head>
 
 	<body>
-		<!-- non-desktop device warning modal -->
-		<dialog id="warningModal" class="warning-modal">
-			<strong>Please preview website on a desktop.</strong>
-			<button type="button" id="closeModalBtn" class="warning-modal__close-btn">OK</button>
+		<!-- Non-Desktop device warning modal -->
+		<dialog id="warning_modal" class="warning-modal">
+			<strong>Please preview website on a desktop device.</strong>
+
+			<button type="button" aria-controls="warning_modal" id="close_modal_btn" class="warning-modal__close-btn">
+				OK
+			</button>
 		</dialog>
 
 		<header class="header">
 			<h1 class="header__title">Multiplication Table</h1>
 
 			<address class="contact-links">
-				<span>by</span>
+				<small style="font-size: small">by</small>
 				<a href="https://shayan-zamani.me" target="_blank" rel="noreferrer" class="contact-links__author">
 					Shayan Zamani
 				</a>
 			</address>
 		</header>
 
-		<!-- table -->
+		<!-- Multiplication table -->
 		<div class="wrapper">
 			<main class="main">
-				<table class="table" id="table">
+				<table id="table" class="table">
 					<thead class="table__head">
-						<tr id="tableTopHeaderRow"></tr>
+						<tr id="table_top_header_row"></tr>
 					</thead>
 
-					<tbody class="table__body" id="tableBody"></tbody>
+					<tbody id="table_body" class="table__body"></tbody>
 				</table>
 			</main>
 		</div>
